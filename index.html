@@ -1,178 +1,84 @@
-/* Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpiaNova - Vitrine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="container header-content">
+      <h1 class="site-name">OpiaNova</h1>
+      <a href="#" class="site-button">Voir le site</a>
+    </div>
+  </header>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f4f8;
-  color: #222;
-  line-height: 1.6;
-}
+  <!-- Section applications -->
+  <main class="container">
+    <section class="apps">
+      <h2>Nos Applications</h2>
+      <div class="apps-list">
+        <div class="app-card">
+          <img src="images/app1.jpg" alt="Application 1">
+          <p>Application 1</p>
+        </div>
+        <div class="app-card">
+          <img src="images/app2.jpg" alt="Application 2">
+          <p>Application 2</p>
+        </div>
+        <div class="app-card">
+          <img src="images/app3.jpg" alt="Application 3">
+          <p>Application 3</p>
+        </div>
+        <div class="app-card">
+          <img src="images/app4.jpg" alt="Application 4">
+          <p>Application 4</p>
+        </div>
+        <div class="app-card video">
+          <video controls src="images/demo.mp4"></video>
+          <p>Vidéo Démo</p>
+        </div>
+      </div>
+    </section>
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
+    <!-- Descriptif -->
+    <section class="description">
+      <h2>À propos</h2>
+      <p>OpiaNova est une plateforme regroupant plusieurs applications simples, efficaces et accessibles. Chaque app est conçue pour vous apporter des outils utiles au quotidien, accessibles depuis n’importe quel appareil.</p>
+    </section>
 
-/* Header */
-header {
-  background-color: #004080;
-  color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+    <!-- Liens navigation -->
+    <section class="navigation">
+      <button>&larr;</button>
+      <span>Voir plus d'applications</span>
+      <button>&rarr;</button>
+    </section>
 
-header .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
+    <!-- Barre latérale -->
+    <aside class="sidebar">
+      <h3>Applications</h3>
+      <ul>
+        <li><a href="#">App 1</a></li>
+        <li><a href="#">App 2</a></li>
+        <li><a href="#">App 3</a></li>
+      </ul>
 
-header .site-btn {
-  background: white;
-  color: #004080;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
+      <h3>Catégories</h3>
+      <ul>
+        <li><a href="#">Catégorie 1</a></li>
+        <li class="disabled">Catégorie 2 (non accessible)</li>
+        <li><a href="#">Catégorie 3</a></li>
+      </ul>
+    </aside>
+  </main>
 
-header .site-btn:hover {
-  background: #cce0ff;
-}
-
-/* Gallery */
-.apps-gallery {
-  margin-top: 2rem;
-}
-
-.apps-gallery h2 {
-  margin-bottom: 1rem;
-  color: #004080;
-}
-
-.gallery-scroll {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  flex: 0 0 220px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s;
-}
-
-.card img, .card video {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.card p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #444;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-/* Description */
-.description {
-  margin-top: 3rem;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-}
-
-.description h2 {
-  margin-bottom: 1rem;
-  color: #004080;
-}
-
-/* Slider */
-.slider-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.slider-link button {
-  padding: 0.5rem 1rem;
-  background: #004080;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Sidebar */
-.sidebar {
-  margin-top: 2rem;
-  background: #eaf0f8;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-.sidebar h3 {
-  color: #004080;
-  margin-bottom: 0.5rem;
-}
-
-.sidebar ul {
-  list-style: none;
-  margin: 0 0 1rem 0;
-  padding-left: 1rem;
-}
-
-.sidebar li {
-  margin-bottom: 0.5rem;
-}
-
-.sidebar a {
-  color: #004080;
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.sidebar .disabled {
-  color: #999;
-  pointer-events: none;
-  font-style: italic;
-}
-
-/* Footer */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .gallery-scroll {
-    flex-direction: row;
-  }
-
-  .slider-link {
-    flex-direction: column;
-  }
-}
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 OpiaNova. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
