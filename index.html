@@ -1,84 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpiaNova - Vitrine</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- En-tête -->
   <header>
-    <div class="container header-content">
-      <h1 class="site-name">OpiaNova</h1>
-      <a href="#" class="site-button">Voir le site</a>
-    </div>
+    <h1>OpiaNova</h1>
+    <a href="#">Voir le site</a>
   </header>
 
   <!-- Section applications -->
-  <main class="container">
-    <section class="apps">
-      <h2>Nos Applications</h2>
-      <div class="apps-list">
-        <div class="app-card">
-          <img src="images/app1.jpg" alt="Application 1">
-          <p>Application 1</p>
-        </div>
-        <div class="app-card">
-          <img src="images/app2.jpg" alt="Application 2">
-          <p>Application 2</p>
-        </div>
-        <div class="app-card">
-          <img src="images/app3.jpg" alt="Application 3">
-          <p>Application 3</p>
-        </div>
-        <div class="app-card">
-          <img src="images/app4.jpg" alt="Application 4">
-          <p>Application 4</p>
-        </div>
-        <div class="app-card video">
-          <video controls src="images/demo.mp4"></video>
-          <p>Vidéo Démo</p>
-        </div>
-      </div>
-    </section>
+  <section>
+    <h2>Nos Applications</h2>
+    <div class="gallery">
+      <div class="card"><img src="images/app1.jpg" alt="App 1"><p>Application 1</p></div>
+      <div class="card"><img src="images/app2.jpg" alt="App 2"><p>Application 2</p></div>
+      <div class="card"><img src="images/app3.jpg" alt="App 3"><p>Application 3</p></div>
+      <div class="card"><video controls src="images/demo.mp4"></video><p>Vidéo Démo</p></div>
+    </div>
+  </section>
 
-    <!-- Descriptif -->
-    <section class="description">
-      <h2>À propos</h2>
-      <p>OpiaNova est une plateforme regroupant plusieurs applications simples, efficaces et accessibles. Chaque app est conçue pour vous apporter des outils utiles au quotidien, accessibles depuis n’importe quel appareil.</p>
-    </section>
+  <!-- Description -->
+  <section>
+    <h2>À propos</h2>
+    <p>OpiaNova est une plateforme regroupant plusieurs applications utiles, simples et accessibles.</p>
+  </section>
 
-    <!-- Liens navigation -->
-    <section class="navigation">
-      <button>&larr;</button>
-      <span>Voir plus d'applications</span>
-      <button>&rarr;</button>
-    </section>
+  <!-- Sidebar -->
+  <aside>
+    <h3>Apps</h3>
+    <ul>
+      <li><a href="#">App 1</a></li>
+      <li><a href="#">App 2</a></li>
+      <li><a href="#">App 3</a></li>
+    </ul>
 
-    <!-- Barre latérale -->
-    <aside class="sidebar">
-      <h3>Applications</h3>
-      <ul>
-        <li><a href="#">App 1</a></li>
-        <li><a href="#">App 2</a></li>
-        <li><a href="#">App 3</a></li>
-      </ul>
-
-      <h3>Catégories</h3>
-      <ul>
-        <li><a href="#">Catégorie 1</a></li>
-        <li class="disabled">Catégorie 2 (non accessible)</li>
-        <li><a href="#">Catégorie 3</a></li>
-      </ul>
-    </aside>
-  </main>
+    <h3>Catégories</h3>
+    <ul>
+      <li><a href="#">Catégorie 1</a></li>
+      <li style="color: gray;">Catégorie 2 (non accessible)</li>
+      <li><a href="#">Catégorie 3</a></li>
+    </ul>
+  </aside>
 
   <!-- Pied de page -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 OpiaNova. Tous droits réservés.</p>
-    </div>
+    <p>&copy; 2025 OpiaNova</p>
   </footer>
+
 </body>
 </html>
