@@ -1,179 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpiaNova - Vitrine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!doctype html>
-<html lang="en" class="notranslate" translate="no">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.wegic.ai/assets/email/logo.ico"
-    />
-    
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
-    />
-    <title>Wegic | Your AI website team: designer, developer, manager</title>
-    <meta
-      name="description"
-      content="Hi, we're Wegic — your AI website team: designer, developer, and manager. Just chat with us, and we'll build, manage, and effortlessly update your site!"
-    />
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image"
-      content="https://cdn.wegic.ai/assets/email/wegic-large-preview.png"
-    />
-    <!-- og facebook -->
-    <meta property="og:url" content="https://wegic.ai" />
-    <meta
-      property="og:title"
-      content="Wegic | Your AI website team: designer, developer, manager"
-    />
-    <meta
-      property="og:description"
-      content="Hi, we're Wegic — your AI website team: designer, developer, and manager. Just chat with us, and we'll build, manage, and effortlessly update your site!"
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.wegic.ai/assets/email/wegic-large-preview.png"
-    />
-    <meta name="baidu-site-verification" content="codeva-CLbmlRL5hc" />
-    <meta name="msvalidate.01" content="EAB34B33A1E6B3E2A53058D28207434B" />
-    <meta
-      name="google-site-verification"
-      content="rPt9jiEi4TF_VxFypqrlaiB5VF_bKJL7N2g8ISKwZNU"
-    />
-    <style>
-      #global-loading {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-      }
+  <!-- En-tête -->
+  <header>
+    <h1>OpiaNova</h1>
+    <a href="#">Voir le site</a>
+  </header>
 
-      @keyframes rectAnimation {
-        0% {
-          left: 30%;
-        }
-
-        100% {
-          left: 100%;
-        }
-      }
-
-      #global-loading #rect {
-        position: absolute;
-        left: 0;
-        width: 15px;
-        height: 75px;
-        background-color: rgba(255, 255, 255, 0.5);
-        filter: blur(2.56px);
-        transform: rotate(30deg);
-        animation: rectAnimation 2s linear infinite;
-      }
-    </style>
-    <script type="module" crossorigin src="https://cdn.wegic.ai/static/js/main-D0X6WYiZ.js"></script>
-    <link rel="modulepreload" crossorigin href="https://cdn.wegic.ai/static/js/chunk-other-B88Y50xY.js">
-    <link rel="stylesheet" crossorigin href="https://cdn.wegic.ai/static/css/main-BLM9OLcC.css">
-  </head>
-
-  <body>
-    <div id="root">
-      <div id="global-loading">
-        <img class="logo" src="https://cdn.wegic.ai/static/svg/TextLogo-DUkRJclD.svg" alt="" />
-        <div id="rect"></div>
-      </div>
+  <!-- Section applications -->
+  <section>
+    <h2>Nos Applications</h2>
+    <div class="gallery">
+      <div class="card"><img src="images/app1.jpg" alt="App 1"><p>Application 1</p></div>
+      <div class="card"><img src="images/app2.jpg" alt="App 2"><p>Application 2</p></div>
+      <div class="card"><img src="images/app3.jpg" alt="App 3"><p>Application 3</p></div>
+      <div class="card"><video controls src="images/demo.mp4"></video><p>Vidéo Démo</p></div>
     </div>
-    <script>
-      console.log(
-        `
-                      #
-                    ####
-                   ##SS#
-                   #SS#                                          ##
-                  #SS#                                           ####
-                 ##S#                                           ##S##
-                 #S##     ##                           ##       ####
-                #SS#     #SS#    ###    ######      #######       ##   #####
-                #S#      #S##   ##S#   ##SSSS##    ##SSSSSS#    ##    ##SSS##
-               ##S#     #SS#    #S##  #SSS###S#   ##SS####S##  #SS#  #SSS##S#
-               #S##     #S#    ##S#  #SS##  #S#  ##S##   #SS# ##S## #SS######
-               #S#     #SS#    #SS# #SS#   ##S# ##S##    #SS# #SS# #SS##
-               #S#     #S##    #SS###S##  ##S####SS#     #S# ##SS###SS#
-               #S#    ##S#    #SSSS##S# ###SS###SS#     ##S# #SSS##SSS#
-               #S#    #SS#    #S##SSSS###SS####SSS#    ##SS##SSS##SSS##
-               #S#   ##SS#   #SS# #SSSSSS#####SS#S#   ##SS###S##SSSSS##
-               #S## ##SSS## ##S#   ##SS#####SS###S####SSSS##S###SS##S## ####
-               ##S###SS#SS###S##    #SS####SS## #SSSSSS#SSSS## #### #S###SS#
-                ##SSS## ##SSS##      ##SSSS###  ##SSS###SSS##       ##SSS##
-                 #####   #####        ######      ### ##SS##         #####
-                                                    ##SSS##
-                                                ####SSSS#  ##########
-                            ###############   ###SSSS#SS# ##SSSSSS#############
-                    ##########SSSSSSSSSSSS## #SSSS####S#  #####SSSSSSSSSSSSSS###
-               #######SSSSSSSSS############ #SS###  #SS#    ################SSSS#
-           #####SSSSSSS##########           #S##   ##S#                    #####
-          ##SSSSS#######                   ##S#    #S##
-         #SSS#####                          #S#   #SS#
-          ####                              #S####SS#
-                                            ##SSSSS#
-                                             ######
+  </section>
 
-`,
-      );
-    </script>
-    <script src="https://cdn.wegic.ai/static/js/abtest.js"></script>
-    <script
-      id="fsc-api"
-      src="https://sbl.onfastspring.com/sbl/1.0.1/fastspring-builder.min.js"
-      type="text/javascript"
-      data-storefront="wegic.onfastspring.com/popup-wegic"
-      data-popup-closed="onFSPopupClosed"
-      data-error-callback="onFSPopupError"
-      async
-    ></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17295687502"
-    ></script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=916113703970278&ev=PageView&noscript=1"
-    /></noscript>
-    <script src="https://cdn.wegic.ai/static/js/gtag.js"></script>
-    <script src="https://cdn.wegic.ai/static/js/ttq.js"></script>
-    <script src="https://cdn.wegic.ai/static/js/fbq.js"></script>
-    <script src="https://cdn.wegic.ai/static/js/fpr.js"></script>
-    <script>
-      (function (w) {
-        w.fpr =
-          w.fpr ||
-          function () {
-            w.fpr.q = w.fpr.q || [];
-            w.fpr.q[arguments[0] == 'set' ? 'unshift' : 'push'](arguments);
-          };
-      })(window);
-      fpr('init', { cid: '394v36yx' });
-      fpr('click');
-    </script>
-  
-          <script>
-            window.scm = {
-              lane: 'default',
-              gitBranch: 'master',
-              gitHash: '928ba8fc',
-              deployEnv: 'aibuild-tencent-zprod',
-              nodeEnv: 'production',
-              buildTime: 'Tue Jul 22 2025 08:32:24 GMT+0000 (Coordinated Universal Time)',
-            };
-          </script>
-        </body>
+  <!-- Description -->
+  <section>
+    <h2>À propos</h2>
+    <p>OpiaNova est une plateforme regroupant plusieurs applications utiles, simples et accessibles.</p>
+  </section>
+
+  <!-- Sidebar -->
+  <aside>
+    <h3>Apps</h3>
+    <ul>
+      <li><a href="#">App 1</a></li>
+      <li><a href="#">App 2</a></li>
+      <li><a href="#">App 3</a></li>
+    </ul>
+
+    <h3>Catégories</h3>
+    <ul>
+      <li><a href="#">Catégorie 1</a></li>
+      <li style="color: gray;">Catégorie 2 (non accessible)</li>
+      <li><a href="#">Catégorie 3</a></li>
+    </ul>
+  </aside>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 OpiaNova</p>
+  </footer>
+
+</body>
 </html>
