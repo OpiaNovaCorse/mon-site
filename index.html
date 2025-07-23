@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpiaNova - Application Mobile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/logo.png" alt="OpiaNova Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="#download" data-i18n="nav.download">Télécharger</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <select id="language-selector">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="co">Corsu</option>
+                    <option value="it">Italiano</option>
+                    <option value="zh">中文</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1 data-i18n="home.title">Bienvenue chez OpiaNova</h1>
+            <p data-i18n="home.description">Découvrez notre application mobile révolutionnaire pour une expérience unique.</p>
+            <a href="#download" class="btn" data-i18n="home.cta">Téléchargez maintenant</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 data-i18n="about.title">À propos d'OpiaNova</h2>
+            <p data-i18n="about.description">OpiaNova est une application conçue pour simplifier votre quotidien avec des fonctionnalités innovantes et une interface intuitive.</p>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container">
+            <h2 data-i18n="download.title">Téléchargez l'application</h2>
+            <div class="download-links">
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="assets/ios-download.png" alt="Download on App Store" class="store-badge">
+                </a>
+                <a href="https://play.google.com/store" target="_blank">
+                    <img src="assets/android-download.png" alt="Download on Google Play" class="store-badge">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-i18n="contact.title">Contactez-nous</h2>
+            <p data-i18n="contact.description">Vous avez des questions ? Contactez notre équipe pour plus d'informations.</p>
+            <form>
+                <input type="text" placeholder="Nom" data-i18n="[placeholder]contact.name">
+                <input type="email" placeholder="Email" data-i18n="[placeholder]contact.email">
+                <textarea placeholder="Message" data-i18n="[placeholder]contact.message"></textarea>
+                <button type="submit" data-i18n="contact.submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.text">&copy; 2025 OpiaNova. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/i18next@23.2.3/dist/umd/i18next.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

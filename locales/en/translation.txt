@@ -1,0 +1,14 @@
+{
+    nav {
+        home Home,
+        about About,
+        download Download,
+        contact Contact
+    },
+    home {
+        title Welcome to OpiaNova,
+        description Discover our revolutionary mobile app for a unique experience.,
+        cta Download Now
+    },
+     ... (continuer pour chaque section)
+}

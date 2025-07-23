@@ -1,0 +1,31 @@
+{
+    nav {
+        home Accueil,
+        about À propos,
+        download Télécharger,
+        contact Contact
+    },
+    home {
+        title Bienvenue chez OpiaNova,
+        description Découvrez notre application mobile révolutionnaire pour une expérience unique.,
+        cta Téléchargez maintenant
+    },
+    about {
+        title À propos d'OpiaNova,
+        description OpiaNova est une application conçue pour simplifier votre quotidien avec des fonctionnalités innovantes et une interface intuitive.
+    },
+    download {
+        title Téléchargez l'application
+    },
+    contact {
+        title Contactez-nous,
+        description Vous avez des questions  Contactez notre équipe pour plus d'informations.,
+        name Nom,
+        email Email,
+        message Message,
+        submit Envoyer
+    },
+    footer {
+        text &copy; 2025 OpiaNova. Tous droits réservés.
+    }
+}
